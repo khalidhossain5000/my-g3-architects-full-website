@@ -7,3 +7,42 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared css styles  */
+
+.display-flex{
+    display: flex;
+}
+/* background colors  */
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* all colors  */
+.dark-01{
+    color: #131313;
+}
+.dark-02{
+    color: rgba(66, 66, 66, 1);
+}
+
+.dark-03{
+    color: #727272;
+}
+
+/* nav css start  */
+.navbar{
+    justify-content: space-between;
+}
+.link-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.banner,.navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+}
