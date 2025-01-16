@@ -28,10 +28,20 @@
 .dark-03{
     color: #727272;
 }
-
+/* button styles  */
+.btn-primary{
+    padding: 20px 25px ;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+}
 /* nav css start  */
 .navbar{
     justify-content: space-between;
+    align-items: center ;
 }
 .link-item{
     list-style: none;
@@ -41,8 +51,32 @@
 .nav-link{
     text-decoration: none;
 }
-
-.banner,.navbar{
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.banner, .navbar{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* banner css start  */
+.banner-content{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+    width: 850px;
+    margin: 0 auto;
+}
+.banner-description {
+    font-size: 1rem;
+    width: 860px;
+    margin: 10px auto 0px auto;
+}
+
+.btn-primary{
+    margin-top: 30px;
 }
