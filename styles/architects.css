@@ -207,7 +207,23 @@
     display: flex;
     gap: 146px;
 }
+#ex-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#ex-year{
+    font-size: 4rem;
+    font-weight: bold;
+}
+#ex-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
+.f-image{
+    width: 100%;
+}
 /* RESPONSIVE CSS STYLE PARTS START FROM HERE  */
 
 @media screen and (max-width:576px){
@@ -241,5 +257,13 @@
     .sponser-companier{
         justify-items: center;
         gap: 35px;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+    #ex-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
