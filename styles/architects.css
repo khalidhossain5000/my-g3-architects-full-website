@@ -9,7 +9,9 @@
 }
 
 /* shared css styles  */
-
+.main > section{
+    margin-top: 130px ;
+}
 .display-flex{
     display: flex;
 }
@@ -38,6 +40,10 @@
     border: none;
     border-radius: 8px;
 }
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* nav css start  */
 .navbar{
     justify-content: space-between;
@@ -59,24 +65,181 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-
-/* banner css start  */
-.banner-content{
-    text-align: center;
-    margin-bottom: 60px;
+.section-title{
+    font-size: 2.9rem;
+    font-size: bold;
 }
+/* banner css start  */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .banner-title{
     font-size: 4rem;
     font-weight: bold;
-    width: 850px;
+    max-width: 850px;
     margin: 0 auto;
 }
 .banner-description {
     font-size: 1rem;
-    width: 860px;
+    max-width: 860px;
     margin: 10px auto 0px auto;
 }
 
 .btn-primary{
     margin-top: 30px;
+}
+
+.banner-image{
+    max-width: 100%;
+}
+/* banner code end here  */
+/* team and features css code start herw  */
+.teams{
+    align-items: center;
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+#quick-list{
+    font-size: 2.9rem;
+    font-weight: 500;
+}
+
+.our{
+    font-size: 2.9rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.ftext{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #FF900E;
+}
+.feature-description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* facts css start here  */
+.facts-description{
+    max-width: 540px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.fact-card{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.fact-number{
+    font-size: 2.9rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.fact-name{
+    font-size: 1.15rem;
+    margin: 15px 0;
+}
+
+/* sponser css start  */
+.sponser-info{
+    text-align: center;
+    max-width: 540px;
+    margin: auto;
+}
+.sponser-title{
+    margin-bottom: 30px;
+}
+.sponser-description{
+    font-size: 1rem;
+    margin:20px auto;
+}
+
+.sponser-companier{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponser-companier img{
+    filter: grayscale(100%);
+}
+
+/* feature we will love section css start here  */
+
+#features-m-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 25px;
+}
+.feature-title{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4 30 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.features{
+    display: flex;
+    gap: 146px;
+}
+
+/* RESPONSIVE CSS STYLE PARTS START FROM HERE  */
+
+@media screen and (max-width:576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+        
+    }
+
+    .teams{
+        flex-direction: column;
+    }
+
+    .team-image-container{
+        grid-template-columns: 1fr;
+    }
+
+    .our-features{
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .facts-container{
+        grid-template-columns:1fr;
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponser-companier{
+        grid-template-columns: 1fr;
+    }
+    .sponser-companier{
+        justify-items: center;
+        gap: 35px;
+    }
 }
